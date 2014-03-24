@@ -11,4 +11,7 @@ class Event {
             entries : Entry
     ]
 
+    String toString(){
+        return name
+    }
 }

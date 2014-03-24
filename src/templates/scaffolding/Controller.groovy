@@ -21,7 +21,7 @@ class ${className}Controller {
             return
         }
 
-        [${propertyName}List: ${className}.list(params), ${propertyName}Total: ${className}.count()]
+        [${propertyName}List: ${propertyName}List, ${propertyName}Total: ${propertyName}Total]
     }
 
     def create() {

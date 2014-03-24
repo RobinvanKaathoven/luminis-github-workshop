@@ -23,7 +23,7 @@ class ParticipantController {
             return
         }
 
-        [participantInstanceList: Participant.list(params), participantInstanceTotal: Participant.count()]
+        [participantInstanceList: participantInstanceList, participantInstanceTotal: participantInstanceTotal]
     }
 
     def create() {

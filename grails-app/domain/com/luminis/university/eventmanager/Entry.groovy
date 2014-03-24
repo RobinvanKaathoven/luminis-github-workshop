@@ -8,6 +8,7 @@ class Entry {
     ]
 
     static constraints = {
+        event(unique: ['participant'])
     }
 
 }

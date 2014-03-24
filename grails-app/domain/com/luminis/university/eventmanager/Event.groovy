@@ -6,7 +6,5 @@ class Event {
     }
 
     String name
-    static hasMany = [
-            participants : Participant
-    ]
+
 }

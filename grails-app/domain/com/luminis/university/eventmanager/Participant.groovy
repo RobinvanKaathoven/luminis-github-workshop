@@ -5,5 +5,10 @@ class Participant {
     static constraints = {
     }
 
-    String name
+    String firstName
+    String lastName
+
+    String toString() {
+        return firstName + " " + lastName
+    }
 }

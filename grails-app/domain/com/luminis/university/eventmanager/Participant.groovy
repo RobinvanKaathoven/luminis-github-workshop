@@ -11,4 +11,8 @@ class Participant {
     String toString() {
         return firstName + " " + lastName
     }
+
+    static hasMany = [
+            entries : Entry
+    ]
 }

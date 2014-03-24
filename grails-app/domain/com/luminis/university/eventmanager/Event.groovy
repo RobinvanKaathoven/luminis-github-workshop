@@ -7,4 +7,8 @@ class Event {
 
     String name
 
+    static hasMany = [
+            entries : Entry
+    ]
+
 }

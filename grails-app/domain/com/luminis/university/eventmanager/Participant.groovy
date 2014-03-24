@@ -4,4 +4,6 @@ class Participant {
 
     static constraints = {
     }
+
+    String name
 }

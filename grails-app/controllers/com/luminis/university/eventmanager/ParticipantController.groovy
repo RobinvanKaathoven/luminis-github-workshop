@@ -1,7 +1,6 @@
 package com.luminis.university.eventmanager
 
 import org.springframework.dao.DataIntegrityViolationException
-import com.luminis.university.eventmanager.Entry
 import grails.converters.JSON
 
 class ParticipantController {
@@ -15,8 +14,8 @@ class ParticipantController {
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
 
-        def participantInstanceList = Entry.list(params)
-        def participantInstanceTotal = Entry.count()
+        def participantInstanceList = Participant.list(params)
+        def participantInstanceTotal = Participant.count()
 
         if(params.contentType == "json") {
             render participantInstanceList as JSON

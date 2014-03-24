@@ -13,8 +13,8 @@ class ${className}Controller {
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
 
-        def ${propertyName}List = Entry.list(params)
-        def ${propertyName}Total = Entry.count()
+        def ${propertyName}List = ${className}.list(params)
+        def ${propertyName}Total = ${className}.count()
 
         if(params.contentType == "json") {
             render ${propertyName}List as JSON

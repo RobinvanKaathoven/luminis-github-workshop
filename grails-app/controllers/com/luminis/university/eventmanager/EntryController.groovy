@@ -1,7 +1,6 @@
 package com.luminis.university.eventmanager
 
 import grails.converters.JSON
-import org.springframework.dao.DataIntegrityViolationException
 
 class EntryController {
 

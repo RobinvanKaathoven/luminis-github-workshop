@@ -1,4 +1,7 @@
+
 <%=packageName ? "package ${packageName}\n\n" : ''%>import org.springframework.dao.DataIntegrityViolationException
+import com.luminis.university.eventmanager.Entry
+import grails.converters.JSON
 
 class ${className}Controller {
 
@@ -10,6 +13,15 @@ class ${className}Controller {
 
     def list(Integer max) {
         params.max = Math.min(max ?: 10, 100)
+
+        def ${propertyName}List = Entry.list(params)
+        def ${propertyName}Total = Entry.count()
+
+        if(params.contentType == "json") {
+            render ${propertyName}List as JSON
+            return
+        }
+
         [${propertyName}List: ${className}.list(params), ${propertyName}Total: ${className}.count()]
     }
 
@@ -33,6 +45,11 @@ class ${className}Controller {
         if (!${propertyName}) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: '${domainClass.propertyName}.label', default: '${className}'), id])
             redirect(action: "list")
+            return
+        }
+
+        if(params.contentType == "json") {
+            render ${propertyName} as JSON
             return
         }
 

@@ -5,5 +5,5 @@ class Event {
     static constraints = {
     }
 
-    String name;
+    String name
 }

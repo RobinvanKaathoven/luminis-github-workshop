@@ -11,7 +11,9 @@ import org.junit.*
 @TestFor(Participant)
 class ParticipantTests {
 
-    void testSomething() {
-        fail "Implement me"
+    void testParticipantIsDisplayedWithFirstAndLastNameSeperatedByASpace() {
+        def p = new Participant(firstName: "First", lastName: "Last")
+
+        assert p.toString() == "First Last"
     }
 }

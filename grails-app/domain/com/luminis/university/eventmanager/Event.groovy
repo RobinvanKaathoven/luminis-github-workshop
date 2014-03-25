@@ -2,9 +2,9 @@ package com.luminis.university.eventmanager
 
 class Event {
 
+    Date dateCreated
     Date eventStart
     Date eventEnd
-    Date dateCreated
     String name
 
     static hasMany = [

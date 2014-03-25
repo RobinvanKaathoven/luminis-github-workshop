@@ -2,7 +2,6 @@ package com.luminis.university.eventmanager
 
 class Entry {
 
-
     Date dateCreated
 
     static belongsTo = [

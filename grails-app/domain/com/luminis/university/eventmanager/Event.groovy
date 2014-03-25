@@ -5,7 +5,7 @@ class Event {
     static constraints = {
         name blank: false, minSize: 5
         eventStart nullable: true
-        eventEnd nullable: true
+        eventEnd nullable: true, validator: { val, obj -> val >= obj.eventStart }
     }
 
     static mapping = {

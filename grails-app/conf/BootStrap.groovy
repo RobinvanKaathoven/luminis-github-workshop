@@ -12,8 +12,8 @@ class BootStrap {
         def koningsdag = new Event(name: "Koningsdag").save()
 
         //Add some participants
-        def robin = new Participant(firstName: "Robin", lastName: "van Kaathoven").save()
-        def frank = new Participant(firstName: "Frank", lastName: "Wolferink").save()
+        def robin = new Participant(firstName: "Robin", lastName: "van Kaathoven", email: "Robin.vanKaathoven@luminis.eu").save()
+        def frank = new Participant(firstName: "Frank", lastName: "Wolferink", email: "Frank.Wolferink@luminis.eu").save()
 
         //Add some entries
         def robinGrails101Entry = new Entry(participant: robin, event: grails101).save()

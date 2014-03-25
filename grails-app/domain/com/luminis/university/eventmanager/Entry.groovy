@@ -2,6 +2,14 @@ package com.luminis.university.eventmanager
 
 class Entry {
 
+
+    Date dateCreated
+
+    static belongsTo = [
+            event: Event,
+            participant: Participant
+    ]
+
     static constraints = {
         event(unique: ['participant'])
     }
@@ -10,13 +18,6 @@ class Entry {
         autoTimestamp true
         version false
     }
-
-    Date dateCreated
-
-    static belongsTo = [
-            event: Event,
-            participant: Participant
-    ]
 
     String toString() {
         "$participant on $event"

@@ -18,5 +18,7 @@ class Entry {
             participant: Participant
     ]
 
-
+    String toString() {
+        "$participant on $event"
+    }
 }

@@ -16,10 +16,10 @@ class Participant {
     String email
 
     String toString() {
-        return firstName + " " + lastName
+        "$firstName $lastName"
     }
 
     static hasMany = [
-            entries : Entry
+        entries : Entry
     ]
 }

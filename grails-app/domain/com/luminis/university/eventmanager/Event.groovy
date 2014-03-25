@@ -26,6 +26,6 @@ class Event {
     }
 
     String toString(){
-        return name
+        name
     }
 }

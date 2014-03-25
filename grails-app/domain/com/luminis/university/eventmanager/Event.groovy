@@ -13,7 +13,12 @@ class Event {
     static constraints = {
         name blank: false, minSize: 5
         eventStart nullable: true
-        eventEnd nullable: true
+        eventEnd nullable: true, validator: {
+            val, obj ->
+                if (val < obj.eventStart) {
+                    return "com.luminis.university.eventmanager.Event.endDate.before.startDate.error"
+                }
+        }
     }
 
     static mapping = {

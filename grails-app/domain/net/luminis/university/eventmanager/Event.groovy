@@ -1,4 +1,4 @@
-package com.luminis.university.eventmanager
+package net.luminis.university.eventmanager
 
 class Event {
 
@@ -15,7 +15,7 @@ class Event {
         eventStart nullable: true
         eventEnd nullable: true, validator: { val, obj ->
             if (val < obj.eventStart) {
-                return "com.luminis.university.eventmanager.Event.endDate.before.startDate.error"
+                return "net.luminis.university.eventmanager.Event.endDate.before.startDate.error"
             }
         }
     }

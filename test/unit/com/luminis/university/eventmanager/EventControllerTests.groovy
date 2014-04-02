@@ -3,7 +3,7 @@ package com.luminis.university.eventmanager
 
 
 import grails.test.mixin.*
-import org.junit.*
+import net.luminis.university.eventmanager.EventController
 
 /**
  * See the API for {@link grails.test.mixin.web.ControllerUnitTestMixin} for usage instructions

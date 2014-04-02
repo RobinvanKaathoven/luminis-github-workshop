@@ -1,4 +1,4 @@
-<%@ page import="com.luminis.university.eventmanager.Participant" %>
+<%@ page import="net.luminis.university.eventmanager.Participant" %>
 <!DOCTYPE html>
 <html>
 <head>

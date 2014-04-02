@@ -1,4 +1,4 @@
-package com.luminis.university.eventmanager
+package net.luminis.university.eventmanager
 
 import org.springframework.dao.DataIntegrityViolationException
 import grails.converters.JSON

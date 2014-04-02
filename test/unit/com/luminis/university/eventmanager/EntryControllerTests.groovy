@@ -1,8 +1,7 @@
 package com.luminis.university.eventmanager
 
-
-
-import org.junit.*
+import net.luminis.university.eventmanager.Entry
+import net.luminis.university.eventmanager.EntryController
 import grails.test.mixin.*
 
 @TestFor(EntryController)

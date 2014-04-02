@@ -1,5 +1,5 @@
 <%=packageName ? "package ${packageName}\n\n" : ''%>import org.springframework.dao.DataIntegrityViolationException
-import com.luminis.university.eventmanager.Entry
+import net.luminis.university.eventmanager.Entry
 import grails.converters.JSON
 
 class ${className}Controller {

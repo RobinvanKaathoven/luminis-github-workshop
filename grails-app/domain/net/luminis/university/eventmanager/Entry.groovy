@@ -1,4 +1,4 @@
-package com.luminis.university.eventmanager
+package net.luminis.university.eventmanager
 
 class Entry {
 

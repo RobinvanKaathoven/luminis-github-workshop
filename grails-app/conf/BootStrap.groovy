@@ -1,6 +1,6 @@
-import com.luminis.university.eventmanager.Entry
-import com.luminis.university.eventmanager.Event
-import com.luminis.university.eventmanager.Participant
+import net.luminis.university.eventmanager.Entry
+import net.luminis.university.eventmanager.Event
+import net.luminis.university.eventmanager.Participant
 
 class BootStrap {
 
